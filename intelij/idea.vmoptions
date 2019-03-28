@@ -1,0 +1,12 @@
+# custom IntelliJ IDEA VM options
+
+-server
+-ea
+-Xmx4096m
+-Xms4096m
+-XX:+UseG1GC
+-XX:-UseParNewGC
+-XX:-UseConcMarkSweepGC
+-XX:ReservedCodeCacheSize=256m
+-XX:+OmitStackTraceInFastThrow
+-Dsun.io.useCanonCaches=false
