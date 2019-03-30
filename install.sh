@@ -14,3 +14,9 @@ done
 
 # Karabiner
 ln -snfv "$DOTFILES/karabiner/karabiner.json" "$HOME/.config/karabiner/karabiner.json"
+
+# Prezto
+if [[ -d "$HOME/.zprezto/runcoms" ]]; then
+  rm -r "$HOME/.zprezto/runcoms"
+fi
+ln -snfv "$DOTFILES/zprezto/runcoms" "$HOME/.zprezto/runcoms"
