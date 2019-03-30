@@ -2,9 +2,6 @@
 # 共通環境変数
 # ---------------------------------------------------------------------
 
-# CLIで使用したいエディタの実行ファイルのパス
-export EDITOR="/usr/bin/vi"
-
 # GoogleDriveまでのパス
 export GDRIVE="$HOME/GoogleDrive"
 
