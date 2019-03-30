@@ -2,6 +2,7 @@
 
 DOTFILES="$HOME/dotfiles"
 
+# Hidden files
 for f in .??*
 do
     [[ "$f" == ".git" ]] && continue
@@ -9,5 +10,7 @@ do
     [[ "$f" == ".idea" ]] && continue
 
     ln -snfv "$DOTFILES/$f" "$HOME"/"$f"
-#    echo "$f"
 done
+
+# Karabiner
+ln -snfv "$DOTFILES/karabiner/karabiner.json" "$HOME/.config/karabiner/karabiner.json"
