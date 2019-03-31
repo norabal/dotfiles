@@ -9,3 +9,6 @@
 if [[ ( "$SHLVL" -eq 1 && ! -o LOGIN ) && -s "${ZDOTDIR:-$HOME}/.zprofile" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprofile"
 fi
+
+# `history`にコマンドの実行日時を表示
+export HISTTIMEFORMAT='%F %T '

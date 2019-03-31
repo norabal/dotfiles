@@ -38,3 +38,7 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
+# コンソールの他のタブや、他のウィンドウとコマンド入力履歴を共有
+setopt share_history
+
+function history_all { history -E 1 }
