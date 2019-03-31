@@ -17,7 +17,6 @@ if [ -f $HOME/.bash_profile ]; then
   source  $HOME/.bash_profile
 fi
 
-# wakatimeをantigenで管理しているので読み込み
 # antigenはzshのプラグインマネージャー
 if [ -f $HOME/antigen.zsh ]; then
   source $HOME/antigen.zsh

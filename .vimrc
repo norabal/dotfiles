@@ -33,3 +33,6 @@ set nobackup
 " スワップファイルを作らない
 set noswapfile
 
+" カラースキーム
+colorscheme elflord
+
