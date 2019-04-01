@@ -32,11 +32,6 @@ fi
 PATH="/Library/Frameworks/Python.framework/Versions/3.6/bin:${PATH}"
 export PATH
 
-# pyenv
-#export PYENV_ROOT="$HOME/.pyenv"
-#export PATH="$PYENV_ROOT/bin:$PATH"
-#eval "$(pyenv init -)"
-
 OTHER=(
   .bash_env_common # 操作PC共通環境変数
   .bash_env_private # 操作PCによって内容の異なる環境変数
