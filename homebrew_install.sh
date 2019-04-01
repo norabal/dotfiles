@@ -51,12 +51,22 @@ formulas=(
     zsh-completions
 )
 
+cask_formulas=(
+    karabiner-elements
+    meld
+)
+
 echo "brew tap..."
-brew tap sanemat/font
+brew tap caskroom/cask
 
 echo "start brew install apps..."
 for formula in "${formulas[@]}"; do
     brew install "$formula" || brew upgrade "$formula"
+done
+
+echo "start brew install cask apps..."
+for formula in "${cask_formulas[@]}"; do
+    brew cask install "$formula" || brew cask upgrade "$formula"
 done
 
 brew cleanup
