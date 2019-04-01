@@ -17,6 +17,7 @@ formulas=(
     cookiecutter
     ctags
     curl
+    direnv
     git
     git-secrets
     go
