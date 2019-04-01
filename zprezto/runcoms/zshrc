@@ -38,6 +38,9 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
+# anacondaのbase環境をアクティベート
+conda activate base
+
 # コンソールの他のタブや、他のウィンドウとコマンド入力履歴を共有
 setopt share_history
 
