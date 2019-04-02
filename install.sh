@@ -15,6 +15,7 @@ dotfiles repo directory: $THIS_DIR"
 START
 
 # Hidden files
+cd "$THIS_DIR"
 for f in .??*
 do
     [[ "$f" == ".git" ]] && continue
@@ -23,6 +24,7 @@ do
 
     ln -snfv "$THIS_DIR/$f" "$HOME"/"$f"
 done
+cd "$HOME"
 
 # Karabiner
 ln -snfv "$THIS_DIR/karabiner/karabiner.json" "$HOME/.config/karabiner/karabiner.json"
