@@ -25,20 +25,20 @@ do
     [[ "$f" == ".DS_Store" ]] && continue
     [[ "$f" == ".idea" ]] && continue
 
-    ln -snfv "$THIS_DIR/$f" "$HOME"/"$f"
+    ln -s "$THIS_DIR/$f" "$HOME"/"$f"
 done
 
 echo "Back to '$CURRENT_DIR'..."
 cd "$CURRENT_DIR"
 
 # Karabiner
-ln -snfv "$THIS_DIR/karabiner/karabiner.json" "$HOME/.config/karabiner/karabiner.json"
+ln -s "$THIS_DIR/karabiner/karabiner.json" "$HOME/.config/karabiner/karabiner.json"
 
 # Prezto
 if [[ -d "$HOME/.zprezto/runcoms" ]]; then
   rm -r "$HOME/.zprezto/runcoms"
 fi
-ln -snfv "$THIS_DIR/zprezto/runcoms" "$HOME/.zprezto/runcoms"
+ln -s "$THIS_DIR/zprezto/runcoms" "$HOME/.zprezto/runcoms"
 
 cat << END
 
