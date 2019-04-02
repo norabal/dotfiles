@@ -26,3 +26,6 @@ alias memo="conda activate new_day; python ${HOME}/new_day; conda deactivate"
 
 # Docker
 alias dc="docker-compose"
+
+# meld
+alias meld="/Applications/Meld.app/Contents/MacOS/Meld"
