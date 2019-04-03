@@ -11,7 +11,7 @@ cat << START
 DOTFILES SETUP STARTED!
 **************************************************
 
-dotfiles repo directory: $THIS_DIR"
+dotfiles repo directory: ${THIS_DIR}"
 
 START
 
