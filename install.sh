@@ -15,8 +15,9 @@ dotfiles repo directory: ${THIS_DIR}"
 
 START
 
-# Hidden files
+echo "Create symlink for Hidden files..."
 echo "Move to '$THIS_DIR'..."
+
 cd "$THIS_DIR"
 
 for f in .??*
@@ -31,10 +32,10 @@ done
 echo "Back to '$CURRENT_DIR'..."
 cd "$CURRENT_DIR"
 
-# Karabiner
+echo  "Create symlink for Karabiner..."
 ln -s "$THIS_DIR/karabiner/karabiner.json" "$HOME/.config/karabiner/karabiner.json"
 
-# Prezto
+echo  "Create symlink for Prezto..."
 if [[ -d "$HOME/.zprezto/runcoms" ]]; then
   rm -r "$HOME/.zprezto/runcoms"
 fi
