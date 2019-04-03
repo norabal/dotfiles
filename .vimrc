@@ -15,6 +15,9 @@ set fileformats=unix,dos,mac
 " 行番号表示
 set number
 
+" カーソルの現在列・行を表示
+set ruler
+
 " 不可視文字の表示
 set list
 set listchars=space:·,nbsp:␣,tab:>-,trail:~,extends:>,precedes:<
