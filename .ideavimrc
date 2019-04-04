@@ -31,3 +31,6 @@ nnoremap <Esc><Esc> :nohlsearch<CR><ESC>
 " xやXのときに無名レジスタを上書きさせない
 nnoremap x "_x
 nnoremap X "_X
+
+" インサートモードから抜けると自動的にIMEをOFFにする
+set iminsert=2
