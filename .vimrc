@@ -39,3 +39,5 @@ set noswapfile
 " カラースキーム
 colorscheme elflord
 
+" マウスによるスクロールをON
+set mouse=a
