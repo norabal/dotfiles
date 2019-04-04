@@ -41,3 +41,17 @@ colorscheme elflord
 
 " マウスによるスクロールをON
 set mouse=a
+
+" タイプ途中のコマンドを画面最下行に表示
+set showcmd
+
+" コマンドライン補完を便利に
+set wildmenu
+
+" ステータスラインを常に表示する
+set laststatus=2
+
+" [ って打ったら [] って入力されてしかも括弧の中にいる(以下同様)
+imap [ []<left>
+imap ( ()<left>
+imap { {}<left>
