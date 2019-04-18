@@ -16,6 +16,7 @@ formulas=(
     bash
     cookiecutter
     ctags
+    ctags-exuberant
     curl
     direnv
     git
