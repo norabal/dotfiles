@@ -63,3 +63,6 @@ imap { {}<left>
 " インサートモードではカーソルはパイプに形を変える
 let &t_SI = "\<Esc>]50;CursorShape=1\x7"
 let &t_EI = "\<Esc>]50;CursorShape=0\x7"
+
+" MacVimなどのGUIでファイルを開いた際、自動でNERDTreeが開かないようにする
+let g:nerdtree_tabs_open_on_gui_startup = 0
