@@ -32,7 +32,7 @@ source ${HOME}/.vim_bootstrap
 "set shiftwidth=2
 
 " カーソルのある行を目立つようにする
-"set cursorline
+set cursorline
 
 " ファイルを上書きする前にバックアップを作ることを無効化
 set nobackup
