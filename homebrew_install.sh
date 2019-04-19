@@ -24,6 +24,7 @@ formulas=(
     go
     heroku
     jenkins
+    macvim
     make
     mecab-ipadic
     mongodb
