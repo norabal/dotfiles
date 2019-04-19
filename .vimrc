@@ -40,6 +40,9 @@ set nobackup
 " スワップファイルを作らない
 set noswapfile
 
+" 文字の折返しを行わない
+set nowrap
+
 " カラースキーム
 "colorscheme elflord
 
