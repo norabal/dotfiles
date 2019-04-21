@@ -26,6 +26,9 @@ alias delete_remote_merged_branch="git branch -r --merged master | grep -v -e ma
 # CLIからVS Codeでファイルを開く
 alias edit="/Applications/Visual\ Studio\ Code.app/Contents/MacOS/Electron"
 
+# mvimでMacVimが起動するようにする
+alias mvim="/Applications/MacVim.app/Contents/bin/mvim"
+
 # メモを開く
 alias memo="conda activate new_day; python ${HOME}/new_day; conda deactivate"
 
