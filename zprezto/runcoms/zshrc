@@ -39,9 +39,23 @@ unset __conda_setup
 # <<< conda initialize <<<
 
 # anacondaのbase環境をアクティベート
-conda activate base
+#conda activate base
 
 # コンソールの他のタブや、他のウィンドウとコマンド入力履歴を共有
 setopt share_history
+
+# ヒストリ(履歴)を保存、数を増やす
+HISTFILE=~/.zsh_history
+HISTSIZE=100000
+SAVEHIST=100000
+
+# 直前と同じコマンドの場合は履歴に追加しない
+setopt hist_ignore_dups
+
+# 同じコマンドをヒストリに残さない
+setopt hist_ignore_all_dups
+
+# スペースから始まるコマンド行はヒストリに残さない
+setopt hist_ignore_space
 
 function history_all { history -E 1 }

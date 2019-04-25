@@ -1,3 +1,9 @@
 *~
 .DS_Store
+
+.env
+
+# intelij
 .idea/
+*.iml
+
