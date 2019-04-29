@@ -54,6 +54,7 @@ formulas=(
 )
 
 cask_formulas=(
+    boostnote
     karabiner-elements
     meld
 )
