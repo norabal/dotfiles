@@ -35,6 +35,7 @@ formulas=(
     openssl
     perl
     php
+    postgres
     pyenv
     python3
     rabbitmq
