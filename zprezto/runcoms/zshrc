@@ -60,3 +60,6 @@ setopt hist_ignore_space
 
 # コマンド履歴全取得
 function history_all { history -E 1 }
+
+# vimの発色
+export TERM=xterm-256color

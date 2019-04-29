@@ -30,3 +30,10 @@ let &t_EI = "\<Esc>]50;CursorShape=0\x7"
 
 " MacVimなどのGUIでファイルを開いた際、自動でNERDTreeが開かないようにする
 let g:nerdtree_tabs_open_on_gui_startup = 0
+
+" molokaiはコメント文字と選択範囲が見づらいので変更
+" 参考: http://shocrunch.hatenablog.com/entry/2015/01/15/234555
+if &term == "xterm-256color"
+    hi Comment ctermfg=102
+    hi Visual  ctermbg=236
+endif
