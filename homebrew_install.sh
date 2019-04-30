@@ -55,9 +55,13 @@ formulas=(
 )
 
 cask_formulas=(
+    appcleaner
     boostnote
+    clipy
+    google-chrome
     karabiner-elements
     meld
+    the-unarchiver
 )
 
 echo "brew tap..."
