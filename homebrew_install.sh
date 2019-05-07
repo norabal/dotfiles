@@ -60,6 +60,7 @@ cask_formulas=(
     google-chrome
     karabiner-elements
     meld
+    ngrok
     the-unarchiver
 )
 
