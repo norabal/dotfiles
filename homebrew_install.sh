@@ -56,7 +56,6 @@ formulas=(
 
 cask_formulas=(
     appcleaner
-    boostnote
     clipy
     google-chrome
     karabiner-elements
