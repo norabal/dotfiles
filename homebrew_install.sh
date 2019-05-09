@@ -58,6 +58,7 @@ cask_formulas=(
     appcleaner
     clipy
     google-chrome
+    intellij-idea
     karabiner-elements
     meld
     ngrok

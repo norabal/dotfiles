@@ -35,6 +35,12 @@ cd "$CURRENT_DIR"
 echo  "Create symlink for Karabiner..."
 ln -svi "$THIS_DIR/karabiner/karabiner.json" "$HOME/.config/karabiner/karabiner.json"
 
+echo  "Create symlink for intelij..."
+for f in $HOME/Library/Preferences/IntelliJIdea*
+do
+    ln -svi "$THIS_DIR/intelij/idea.vmoptions" "$f/idea.vmoptions"
+done
+
 echo  "Create symlink for Prezto..."
 if [[ -d "$HOME/.zprezto/runcoms" ]]; then
   rm -r "$HOME/.zprezto/runcoms"
