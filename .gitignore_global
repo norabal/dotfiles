@@ -12,3 +12,5 @@ Gemfile.lock
 Gemfile.next
 yarn.lock
 package-lock.json
+.generators
+.rakeTasks
