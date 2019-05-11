@@ -35,6 +35,7 @@ cd "$CURRENT_DIR"
 echo  "Create symlink for Karabiner..."
 ln -svi "$THIS_DIR/karabiner/karabiner.json" "$HOME/.config/karabiner/karabiner.json"
 
+# WARNING: If you are using JetBrains Toolbox, creating symlink will be failed.
 echo  "Create symlink for intelij..."
 for f in $HOME/Library/Preferences/IntelliJIdea*
 do
