@@ -63,3 +63,6 @@ function history_all { history -E 1 }
 
 # vimの発色
 export TERM=xterm-256color
+
+# direnv
+eval "$(direnv hook zsh)"
