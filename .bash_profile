@@ -11,23 +11,6 @@ fi
 #    export PATH=$HOME/.nodebrew/current/bin:$PATH
 #fi
 
-# rbenv PATH
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
-
-# anyenv PATH
-if [[ -e "$HOME/.anyenv/bin" ]]; then
-    export PATH="$HOME/.anyenv/bin:$PATH"
-    eval "$(anyenv init -)"
-fi
-
-# ndenv PATH
-if [[ -e "$HOME/.ndenv/bin" ]]; then
-    export PATH="$HOME/.ndenv/bin:$PATH"
-    eval "$(ndenv init -)"
-fi
-
 # Setting PATH for Python 3.6
 # The original version is saved in .bash_profile.pysave
 PATH="/Library/Frameworks/Python.framework/Versions/3.6/bin:${PATH}"

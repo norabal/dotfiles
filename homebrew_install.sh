@@ -12,6 +12,7 @@ echo "run brew update..."
 which brew >/dev/null 2>&1 && brew update
 
 formulas=(
+    anyenv
     awscli
     bash
     cookiecutter
@@ -31,7 +32,6 @@ formulas=(
     mysql
     nginx
     nkf
-    node
     openssl
     perl
     php
@@ -39,7 +39,6 @@ formulas=(
     pyenv
     python3
     rabbitmq
-    rbenv
     redis
     ruby
     s3cmd
@@ -72,6 +71,20 @@ echo "start brew install apps..."
 for formula in "${formulas[@]}"; do
     brew install "$formula" || brew upgrade "$formula"
 done
+
+echo "Install anyenv series..."
+anyenv install nodenv
+source "${HOME}/.zshrc"
+anyenv install rbenv
+source "${HOME}/.zshrc"
+
+nodenv install 12.1.0
+nodenv global 12.1.0
+nodenv rehash
+
+rbenv install 2.5.3
+rbenv global 2.5.3
+rbenv rehash
 
 echo "start brew install cask apps..."
 for formula in "${cask_formulas[@]}"; do
