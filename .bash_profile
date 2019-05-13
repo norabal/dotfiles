@@ -5,10 +5,11 @@ if [[ -e "/usr/local/opt/mysql@5.6" ]]; then
     export PATH="/usr/local/opt/mysql@5.6/bin:$PATH"
 fi
 
-# nodebrew PATH
-if [[ -e "$HOME/.nodebrew/current/bin" ]]; then
-    export PATH=$HOME/.nodebrew/current/bin:$PATH
-fi
+## nodebrew PATH
+# TODO Check if it's OK to delete
+#if [[ -e "$HOME/.nodebrew/current/bin" ]]; then
+#    export PATH=$HOME/.nodebrew/current/bin:$PATH
+#fi
 
 # rbenv PATH
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
