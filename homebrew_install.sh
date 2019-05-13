@@ -72,27 +72,6 @@ for formula in "${formulas[@]}"; do
     brew install "$formula" || brew upgrade "$formula"
 done
 
-echo "Initialize anyenv..."
-anyenv install --init -y
-
-echo "Install anyenv plugin..."
-mkdir -p ~/.anyenv/plugins
-git clone https://github.com/znz/anyenv-update.git ~/.anyenv/plugins/anyenv-update
-echo "`anyenv update` is available now."
-
-echo "Install anyenv series..."
-anyenv install nodenv
-anyenv install rbenv
-source "${HOME}/.zshrc"
-
-nodenv install 12.1.0
-nodenv global 12.1.0
-nodenv rehash
-
-rbenv install 2.5.3
-rbenv global 2.5.3
-rbenv rehash
-
 echo "start brew install cask apps..."
 for formula in "${cask_formulas[@]}"; do
     brew cask install "$formula" || brew cask upgrade "$formula"
