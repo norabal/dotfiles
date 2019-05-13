@@ -72,9 +72,16 @@ for formula in "${formulas[@]}"; do
     brew install "$formula" || brew upgrade "$formula"
 done
 
+echo "Initialize anyenv..."
+anyenv install --init -y
+
+echo "Install anyenv plugin..."
+mkdir -p ~/.anyenv/plugins
+git clone https://github.com/znz/anyenv-update.git ~/.anyenv/plugins/anyenv-update
+echo "`anyenv update` is available now."
+
 echo "Install anyenv series..."
 anyenv install nodenv
-source "${HOME}/.zshrc"
 anyenv install rbenv
 source "${HOME}/.zshrc"
 

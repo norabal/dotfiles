@@ -17,6 +17,9 @@ OTHER=(
   .bash_aliases_private # 操作PCによって内容の異なるエイリアス
 )
 
+# Start anyenv
+eval "$(anyenv init -)"
+
 for bashfile in "${OTHER[@]}"; do
   if [[ -e "$HOME/$bashfile" ]]; then
     source "$HOME/$bashfile"
