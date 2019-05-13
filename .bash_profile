@@ -5,12 +5,6 @@ if [[ -e "/usr/local/opt/mysql@5.6" ]]; then
     export PATH="/usr/local/opt/mysql@5.6/bin:$PATH"
 fi
 
-## nodebrew PATH
-# TODO Check if it's OK to delete
-#if [[ -e "$HOME/.nodebrew/current/bin" ]]; then
-#    export PATH=$HOME/.nodebrew/current/bin:$PATH
-#fi
-
 # Setting PATH for Python 3.6
 # The original version is saved in .bash_profile.pysave
 PATH="/Library/Frameworks/Python.framework/Versions/3.6/bin:${PATH}"
