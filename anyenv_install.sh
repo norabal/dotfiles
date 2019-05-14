@@ -3,7 +3,7 @@
 set -u
 
 echo "Initialize anyenv..."
-anyenv install --init -y
+anyenv install --init
 
 echo "Install anyenv plugin..."
 mkdir -p ~/.anyenv/plugins
@@ -15,6 +15,7 @@ anyenv install nodenv
 anyenv install rbenv
 source "${HOME}/.zshrc"
 
+# Add more versions if you prefer.
 nodenv install 12.1.0
 nodenv global 12.1.0
 nodenv rehash
