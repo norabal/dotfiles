@@ -17,8 +17,10 @@ OTHER=(
   .bash_aliases_private # 操作PCによって内容の異なるエイリアス
 )
 
-# Start anyenv
-eval "$(anyenv init -)"
+# Load anyenv
+if which anyenv > /dev/null; then
+    eval "$(anyenv init -)"
+fi
 
 for bashfile in "${OTHER[@]}"; do
   if [[ -e "$HOME/$bashfile" ]]; then
