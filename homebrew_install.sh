@@ -12,16 +12,16 @@ echo "run brew update..."
 which brew >/dev/null 2>&1 && brew update
 
 formulas=(
+    anyenv
     awscli
-    bash
     cookiecutter
     ctags
     ctags-exuberant
     curl
     direnv
+    docker
     git
     git-secrets
-    go
     heroku
     jenkins
     macvim
@@ -31,16 +31,12 @@ formulas=(
     mysql
     nginx
     nkf
-    node
     openssl
-    perl
-    php
+    postgres
     pyenv
     python3
     rabbitmq
-    rbenv
     redis
-    ruby
     s3cmd
     shellcheck
     sqlite
@@ -54,8 +50,14 @@ formulas=(
 )
 
 cask_formulas=(
+    appcleaner
+    clipy
+    google-chrome
+    intellij-idea
     karabiner-elements
     meld
+    ngrok
+    the-unarchiver
 )
 
 echo "brew tap..."

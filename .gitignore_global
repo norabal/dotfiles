@@ -2,8 +2,16 @@
 .DS_Store
 
 .env
+.envrc
 
 # intelij
 .idea/
 *.iml
 
+# Temporary ignore files
+Gemfile.lock
+Gemfile.next
+yarn.lock
+package-lock.json
+.generators
+.rakeTasks

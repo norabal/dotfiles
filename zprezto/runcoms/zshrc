@@ -58,4 +58,8 @@ setopt hist_ignore_all_dups
 # スペースから始まるコマンド行はヒストリに残さない
 setopt hist_ignore_space
 
+# コマンド履歴全取得
 function history_all { history -E 1 }
+
+# direnv
+eval "$(direnv hook zsh)"
