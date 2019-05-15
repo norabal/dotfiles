@@ -14,7 +14,6 @@ which brew >/dev/null 2>&1 && brew update
 formulas=(
     anyenv
     awscli
-    bash
     cookiecutter
     ctags
     ctags-exuberant
@@ -23,7 +22,6 @@ formulas=(
     docker
     git
     git-secrets
-    go
     heroku
     jenkins
     macvim
@@ -34,14 +32,11 @@ formulas=(
     nginx
     nkf
     openssl
-    perl
-    php
     postgres
     pyenv
     python3
     rabbitmq
     redis
-    ruby
     s3cmd
     shellcheck
     sqlite
