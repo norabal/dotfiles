@@ -20,6 +20,7 @@ formulas=(
     ctags-exuberant
     curl
     direnv
+    docker
     git
     git-secrets
     go
