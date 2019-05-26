@@ -56,9 +56,11 @@ cask_formulas=(
     clipy
     google-chrome
     intellij-idea
+    iterm2
     karabiner-elements
     meld
     ngrok
+    spotify
     the-unarchiver
 )
 
