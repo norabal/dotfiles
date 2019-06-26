@@ -20,7 +20,6 @@ formulas=(
     ctags-exuberant
     curl
     direnv
-    docker
     git
     git-secrets
     heroku
@@ -54,6 +53,7 @@ cask_formulas=(
     appcleaner
     bettertouchtool
     clipy
+    docker
     google-chrome
     google-japanese-ime
     intellij-idea
