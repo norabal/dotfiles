@@ -13,7 +13,9 @@ echo "`anyenv update` is available now."
 echo "Install anyenv series..."
 anyenv install nodenv
 anyenv install rbenv
-source "${HOME}/.zshrc"
+
+# Reload profile
+exec $SHELL -l
 
 # Add more versions if you prefer.
 nodenv install 12.1.0
