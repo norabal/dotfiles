@@ -68,6 +68,7 @@ cask_formulas=(
 
 echo "brew tap..."
 brew tap caskroom/cask
+brew tap heroku/brew
 
 echo "start brew install apps..."
 for formula in "${formulas[@]}"; do
