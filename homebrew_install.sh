@@ -55,11 +55,13 @@ cask_formulas=(
     appcleaner
     clipy
     google-chrome
+    google-japanese-ime
     intellij-idea
     iterm2
     karabiner-elements
     meld
     ngrok
+    slack
     spotify
     the-unarchiver
 )
