@@ -15,7 +15,6 @@ formulas=(
     anyenv
     awscli
     bash
-    bettertouchtool
     cookiecutter
     ctags
     ctags-exuberant
@@ -53,6 +52,7 @@ formulas=(
 
 cask_formulas=(
     appcleaner
+    bettertouchtool
     clipy
     google-chrome
     google-japanese-ime
