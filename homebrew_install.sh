@@ -21,7 +21,6 @@ formulas=(
     curl
     direnv
     git
-    git-secrets
     heroku
     jenkins
     macvim
