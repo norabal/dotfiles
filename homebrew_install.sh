@@ -14,6 +14,8 @@ which brew >/dev/null 2>&1 && brew update
 formulas=(
     anyenv
     awscli
+    bash
+    bettertouchtool
     cookiecutter
     ctags
     ctags-exuberant
@@ -54,9 +56,11 @@ cask_formulas=(
     clipy
     google-chrome
     intellij-idea
+    iterm2
     karabiner-elements
     meld
     ngrok
+    spotify
     the-unarchiver
 )
 
