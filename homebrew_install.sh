@@ -52,9 +52,11 @@ cask_formulas=(
     appcleaner
     bettertouchtool
     clipy
+    dbeaver-community
     docker
     google-chrome
     google-japanese-ime
+    homebrew/cask-versions/adoptopenjdk8
     intellij-idea
     iterm2
     karabiner-elements
