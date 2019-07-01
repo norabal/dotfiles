@@ -44,6 +44,7 @@ formulas=(
     terraform
     tmux
     tree
+    yarn
     zsh
     zsh-completions
 )
