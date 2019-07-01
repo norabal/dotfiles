@@ -15,15 +15,12 @@ formulas=(
     anyenv
     awscli
     bash
-    bettertouchtool
     cookiecutter
     ctags
     ctags-exuberant
     curl
     direnv
-    docker
     git
-    git-secrets
     heroku
     jenkins
     macvim
@@ -47,25 +44,34 @@ formulas=(
     terraform
     tmux
     tree
+    yarn
     zsh
     zsh-completions
 )
 
 cask_formulas=(
     appcleaner
+    bettertouchtool
     clipy
+    dbeaver-community
+    docker
     google-chrome
+    google-japanese-ime
+    homebrew/cask-versions/adoptopenjdk8
     intellij-idea
     iterm2
     karabiner-elements
     meld
     ngrok
+    skitch
+    slack
     spotify
     the-unarchiver
 )
 
 echo "brew tap..."
 brew tap caskroom/cask
+brew tap heroku/brew
 
 echo "start brew install apps..."
 for formula in "${formulas[@]}"; do
