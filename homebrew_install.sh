@@ -63,6 +63,7 @@ cask_formulas=(
     karabiner-elements
     meld
     ngrok
+    skitch
     slack
     spotify
     the-unarchiver
