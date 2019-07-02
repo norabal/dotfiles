@@ -34,8 +34,8 @@ export PATH="$HOME/anaconda3/bin:$PATH"
 
 if [[ -d "$HOME/.local/bin" ]]; then
   export PATH=$HOME/.local/bin:$PATH
+  conda activate base
 fi
-
 # added by Anaconda3 2019.03 installer
 # >>> conda init >>>
 # !! Contents within this block are managed by 'conda init' !!
