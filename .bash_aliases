@@ -17,6 +17,8 @@ alias ggrep='git grep'
 alias fetch='git fetch'
 alias co='git checkout'
 alias status='git status'
+alias add='git add'
+alias commit='git commit'
 
 # マージ済みのブランチを全て削除
 # see https://gist.github.com/miukoba/fc3c10a25c1c675c1e97
