@@ -4,9 +4,6 @@
 " .ideavimから設定読み込み
 source ${HOME}/.ideavimrc
 
-" 日本語の文字化け対策（https://qiita.com/meio/items/08143eacd174ac0f7bd5）
-set fileencodings=iso-2022-jp,euc-jp,sjis,utf-8
-
 " カーソルのある行を目立つようにする
 set cursorline
 
