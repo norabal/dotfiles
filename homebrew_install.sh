@@ -50,6 +50,7 @@ formulas=(
 )
 
 cask_formulas=(
+    anaconda
     appcleaner
     bettertouchtool
     clipy
