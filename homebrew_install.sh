@@ -16,6 +16,7 @@ formulas=(
     awscli
     bash
     cookiecutter
+    circleci
     ctags
     ctags-exuberant
     curl
