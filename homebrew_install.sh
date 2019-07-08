@@ -24,7 +24,6 @@ formulas=(
     git
     heroku
     jenkins
-    macvim
     make
     mecab-ipadic
     mongodb
@@ -33,6 +32,7 @@ formulas=(
     nkf
     openssl
     postgres
+    pre-commit
     pyenv
     python3
     rabbitmq
@@ -51,6 +51,7 @@ formulas=(
 )
 
 cask_formulas=(
+    anaconda
     appcleaner
     bettertouchtool
     clipy
@@ -62,6 +63,7 @@ cask_formulas=(
     intellij-idea
     iterm2
     karabiner-elements
+    macvim
     meld
     ngrok
     skitch

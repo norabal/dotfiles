@@ -25,6 +25,7 @@ do
     [[ "$f" == ".git" ]] && continue
     [[ "$f" == ".DS_Store" ]] && continue
     [[ "$f" == ".idea" ]] && continue
+    [[ "$f" == ".pre-commit-config.yaml" ]] && continue
 
     ln -svi "$THIS_DIR/$f" "$HOME"/"$f"
 done
