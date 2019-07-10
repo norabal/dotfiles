@@ -33,7 +33,6 @@ formulas=(
     openssl
     postgres
     pre-commit
-    pyenv
     python3
     rabbitmq
     redis
