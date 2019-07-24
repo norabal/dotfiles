@@ -66,6 +66,7 @@ cask_formulas=(
     macvim
     meld
     ngrok
+    postman
     skitch
     slack
     spotify
