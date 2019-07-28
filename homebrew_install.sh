@@ -56,6 +56,7 @@ cask_formulas=(
     clipy
     dbeaver-community
     docker
+    freemind
     google-chrome
     google-japanese-ime
     homebrew/cask-versions/adoptopenjdk8
