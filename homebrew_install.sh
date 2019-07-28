@@ -56,6 +56,7 @@ cask_formulas=(
     clipy
     dbeaver-community
     docker
+    firefox
     freemind
     google-chrome
     google-japanese-ime
@@ -66,6 +67,7 @@ cask_formulas=(
     macvim
     meld
     ngrok
+    postman
     skitch
     slack
     spotify
