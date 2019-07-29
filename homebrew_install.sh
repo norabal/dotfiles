@@ -57,7 +57,6 @@ cask_formulas=(
     dbeaver-community
     docker
     firefox
-    freemind
     google-chrome
     google-japanese-ime
     homebrew/cask-versions/adoptopenjdk8
