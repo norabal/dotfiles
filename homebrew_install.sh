@@ -79,12 +79,13 @@ brew tap heroku/brew
 
 echo "start brew install apps..."
 for formula in "${formulas[@]}"; do
-    brew install "$formula" || brew upgrade "$formula"
+    brew install "$formula"
 done
 
 echo "start brew install cask apps..."
 for formula in "${cask_formulas[@]}"; do
-    brew cask install "$formula" || brew cask upgrade "$formula"
+    brew cask install "$formula"
+    brew cask upgrade "$formula"
 done
 
 brew cleanup
