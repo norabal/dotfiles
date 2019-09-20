@@ -21,6 +21,7 @@ formulas=(
     ctags-exuberant
     curl
     direnv
+    flake8
     git
     heroku
     jenkins
