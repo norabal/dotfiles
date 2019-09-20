@@ -1,6 +1,6 @@
 # custom IntelliJ IDEA VM options
 
--Xms4096m
+-Xms8192m
 -Xmx8192m
 -XX:ReservedCodeCacheSize=240m
 -XX:+UseCompressedOops
