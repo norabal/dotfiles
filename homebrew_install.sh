@@ -51,19 +51,13 @@ formulas=(
 )
 
 cask_formulas=(
-    anaconda
     appcleaner
-    bettertouchtool
     clipy
     dbeaver-community
     docker
     firefox
     google-chrome
-    google-japanese-ime
-    homebrew/cask-versions/adoptopenjdk8
-    intellij-idea
     iterm2
-    karabiner-elements
     macvim
     meld
     ngrok
@@ -74,6 +68,15 @@ cask_formulas=(
     the-unarchiver
 )
 
+init_cask_formulas=(
+    anaconda
+    bettertouchtool
+    google-japanese-ime
+    homebrew/cask-versions/adoptopenjdk8
+    intellij-idea
+    karabiner-elements
+)
+
 echo "brew tap..."
 brew tap caskroom/cask
 brew tap heroku/brew
@@ -81,7 +84,16 @@ brew tap heroku/brew
 echo "start brew install apps..."
 for formula in "${formulas[@]}"; do
     brew install "$formula"
+    brew upgrade "$formula"
 done
+
+echo "start initial brew install cask apps..."
+if [ $1 = "init" ]; then
+    for formula in "${init_cask_formulas[@]}"; do
+        brew cask install "$formula"
+        brew cask upgrade "$formula"
+    done
+fi
 
 echo "start brew install cask apps..."
 for formula in "${cask_formulas[@]}"; do
