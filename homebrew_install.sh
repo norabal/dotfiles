@@ -88,11 +88,13 @@ for formula in "${formulas[@]}"; do
 done
 
 echo "start initial brew install cask apps..."
-if [ $1 = "init" ]; then
-    for formula in "${init_cask_formulas[@]}"; do
-        brew cask install "$formula"
-        brew cask upgrade "$formula"
-    done
+if [ $# -ne 0 ]; then
+  if [ "$1" = "init" ]; then
+      for formula in "${init_cask_formulas[@]}"; do
+          brew cask install "$formula"
+          brew cask upgrade "$formula"
+      done
+  fi
 fi
 
 echo "start brew install cask apps..."
