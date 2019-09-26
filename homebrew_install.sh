@@ -27,7 +27,6 @@ formulas=(
     jenkins
     make
     mecab-ipadic
-    mongodb
     mysql
     nginx
     nkf
@@ -60,6 +59,7 @@ cask_formulas=(
     iterm2
     macvim
     meld
+    mongodb
     ngrok
     postman
     skitch
