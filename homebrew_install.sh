@@ -55,8 +55,6 @@ cask_formulas=(
     clipy
     dbeaver-community
     docker
-    firefox
-    google-chrome
     iterm2
     macvim
     meld
@@ -72,6 +70,8 @@ cask_formulas=(
 init_cask_formulas=(
     anaconda
     bettertouchtool
+    firefox
+    google-chrome
     google-japanese-ime
     homebrew/cask-versions/adoptopenjdk8
     intellij-idea
