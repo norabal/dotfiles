@@ -52,6 +52,7 @@ formulas=(
 
 cask_formulas=(
     appcleaner
+    cheatsheet
     clipy
     dbeaver-community
     docker
