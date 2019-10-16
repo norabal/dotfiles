@@ -66,6 +66,7 @@ cask_formulas=(
     slack
     spotify
     the-unarchiver
+    kitematic
 )
 
 init_cask_formulas=(
