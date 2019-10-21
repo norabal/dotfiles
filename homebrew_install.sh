@@ -64,7 +64,6 @@ cask_formulas=(
     postman
     skitch
     slack
-    spotify
     the-unarchiver
     kitematic
 )
@@ -78,6 +77,7 @@ init_cask_formulas=(
     homebrew/cask-versions/adoptopenjdk8
     intellij-idea
     karabiner-elements
+    spotify
 )
 
 echo "brew tap..."
