@@ -55,7 +55,6 @@ cask_formulas=(
     cheatsheet
     clipy
     dbeaver-community
-    docker
     iterm2
     macvim
     meld
@@ -71,6 +70,7 @@ cask_formulas=(
 init_cask_formulas=(
     anaconda
     bettertouchtool
+    docker
     firefox
     google-chrome
     google-japanese-ime
@@ -78,6 +78,7 @@ init_cask_formulas=(
     intellij-idea
     karabiner-elements
     spotify
+    virtualbox
 )
 
 echo "brew tap..."
