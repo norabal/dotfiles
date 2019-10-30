@@ -57,7 +57,6 @@ cask_formulas=(
     dbeaver-community
     iterm2
     macvim
-    meld
     mongodb
     ngrok
     postman
