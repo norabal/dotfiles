@@ -38,7 +38,7 @@ ln -svi "$THIS_DIR/karabiner/karabiner.json" "$HOME/.config/karabiner/karabiner.
 
 # WARNING: If you are using JetBrains Toolbox, creating symlink will be failed.
 echo  "Create symlink for intelij..."
-for f in $HOME/Library/Preferences/IntelliJIdea*
+for f in "$HOME"/Library/Preferences/IntelliJIdea*
 do
     ln -svi "$THIS_DIR/intelij/idea.vmoptions" "$f/idea.vmoptions"
 done
@@ -48,6 +48,10 @@ if [[ -d "$HOME/.zprezto/runcoms" ]]; then
   rm -r "$HOME/.zprezto/runcoms"
 fi
 ln -sv "$THIS_DIR/zprezto/runcoms" "$HOME/.zprezto/runcoms"
+
+echo "Display hidden files on Finder.app..."
+defaults write com.apple.finder AppleShowAllFiles TRUE
+killall Finder
 
 cat << END
 
