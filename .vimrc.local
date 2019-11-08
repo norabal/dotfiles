@@ -36,7 +36,7 @@ if &term == "xterm-256color"
 endif
 
 " JSONビュアーとしてVim(とjq)を使う
-" 参考: http://shocrunch.hatenablog.com/entry/2015/01/15/234555
+" 参考: https://qiita.com/tekkoc/items/324d736f68b0f27680b8
 command! -nargs=? Jq call s:Jq(<f-args>)
 function! s:Jq(...)
     if 0 == a:0
