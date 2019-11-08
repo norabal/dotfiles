@@ -4,9 +4,6 @@
 " .ideavimから設定読み込み
 source ${HOME}/.ideavimrc
 
-" 日本語の文字化け対策（https://qiita.com/meio/items/08143eacd174ac0f7bd5）
-set fileencodings=iso-2022-jp,euc-jp,sjis,utf-8
-
 " カーソルのある行を目立つようにする
 set cursorline
 
@@ -37,3 +34,18 @@ if &term == "xterm-256color"
     hi Comment ctermfg=102
     hi Visual  ctermbg=236
 endif
+
+" JSONビュアーとしてVim(とjq)を使う
+" 参考: https://qiita.com/tekkoc/items/324d736f68b0f27680b8
+command! -nargs=? Jq call s:Jq(<f-args>)
+function! s:Jq(...)
+    if 0 == a:0
+        let l:arg = "."
+    else
+        let l:arg = a:1
+    endif
+    execute "%! jq \"" . l:arg . "\""
+endfunction
+
+" \nを改行に置換する
+command! Breakn %s/\\n/\r/g
