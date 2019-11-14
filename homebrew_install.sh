@@ -27,6 +27,7 @@ formulas=(
     heroku
     jenkins
     jq
+    lnav
     make
     mecab-ipadic
     mysql
