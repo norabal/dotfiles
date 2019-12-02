@@ -57,6 +57,7 @@ cask_formulas=(
     cheatsheet
     clipy
     dbeaver-community
+    imageoptim
     iterm2
     macvim
     mongodb
