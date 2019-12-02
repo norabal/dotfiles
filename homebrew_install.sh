@@ -66,6 +66,7 @@ cask_formulas=(
     slack
     the-unarchiver
     kitematic
+    xmind
 )
 
 init_cask_formulas=(
