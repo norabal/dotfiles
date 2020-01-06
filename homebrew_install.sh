@@ -27,6 +27,7 @@ formulas=(
     heroku
     jenkins
     jq
+    lnav
     make
     mecab-ipadic
     mysql
@@ -56,15 +57,16 @@ cask_formulas=(
     cheatsheet
     clipy
     dbeaver-community
+    imageoptim
     iterm2
     macvim
     mongodb
     ngrok
     postman
-    skitch
     slack
     the-unarchiver
     kitematic
+    xmind
 )
 
 init_cask_formulas=(
