@@ -53,6 +53,7 @@ formulas=(
 )
 
 cask_formulas=(
+    alfred
     appcleaner
     cheatsheet
     clipy
