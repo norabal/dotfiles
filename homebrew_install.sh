@@ -66,7 +66,6 @@ cask_formulas=(
     postman
     slack
     the-unarchiver
-    kitematic
     xmind
 )
 
