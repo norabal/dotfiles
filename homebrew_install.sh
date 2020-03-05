@@ -67,7 +67,6 @@ cask_formulas=(
     station
     slack
     the-unarchiver
-    kitematic
     xmind
 )
 
