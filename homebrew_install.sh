@@ -64,7 +64,6 @@ cask_formulas=(
     mongodb
     ngrok
     postman
-    station
     slack
     the-unarchiver
     xmind
