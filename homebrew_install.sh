@@ -24,6 +24,7 @@ formulas=(
     direnv
     flake8
     git
+    golangci/tap/golangci-lint
     heroku
     jenkins
     jq
