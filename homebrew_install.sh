@@ -66,6 +66,7 @@ cask_formulas=(
     postman
     slack
     the-unarchiver
+    virtualbox
     xmind
 )
 
@@ -80,7 +81,6 @@ init_cask_formulas=(
     intellij-idea
     karabiner-elements
     spotify
-    virtualbox
 )
 
 echo "brew tap..."
