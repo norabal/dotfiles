@@ -67,6 +67,7 @@ cask_formulas=(
     postman
     slack
     the-unarchiver
+    visual-studio-code
     xmind
 )
 
