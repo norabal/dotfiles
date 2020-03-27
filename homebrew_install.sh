@@ -23,6 +23,7 @@ formulas=(
     curl
     direnv
     flake8
+    go
     git
     heroku
     jenkins
