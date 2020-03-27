@@ -8,6 +8,12 @@
 .idea/
 *.iml
 
+# vscode
+.vscode/*
+*.code-workspace
+.history/
+.devcontainer/
+
 # Temporary ignore files
 Gemfile.lock
 Gemfile.next

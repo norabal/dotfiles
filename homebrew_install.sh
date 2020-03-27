@@ -23,7 +23,9 @@ formulas=(
     curl
     direnv
     flake8
+    go
     git
+    golangci/tap/golangci-lint
     heroku
     jenkins
     jq
@@ -53,6 +55,7 @@ formulas=(
 )
 
 cask_formulas=(
+    alfred
     appcleaner
     cheatsheet
     clipy
@@ -65,7 +68,7 @@ cask_formulas=(
     postman
     slack
     the-unarchiver
-    kitematic
+    visual-studio-code
     xmind
 )
 
