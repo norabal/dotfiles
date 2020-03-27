@@ -25,6 +25,7 @@ formulas=(
     flake8
     go
     git
+    golangci/tap/golangci-lint
     heroku
     jenkins
     jq
@@ -65,9 +66,9 @@ cask_formulas=(
     mongodb
     ngrok
     postman
-    station
     slack
     the-unarchiver
+    visual-studio-code
     xmind
 )
 
