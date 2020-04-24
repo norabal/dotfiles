@@ -70,6 +70,7 @@ cask_formulas=(
     the-unarchiver
     visual-studio-code
     xmind
+    zoom
 )
 
 init_cask_formulas=(
