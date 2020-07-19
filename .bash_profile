@@ -5,11 +5,6 @@ if [[ -e "/usr/local/opt/mysql@5.6" ]]; then
     export PATH="/usr/local/opt/mysql@5.6/bin:$PATH"
 fi
 
-# Setting PATH for Python 3.6
-# The original version is saved in .bash_profile.pysave
-PATH="/Library/Frameworks/Python.framework/Versions/3.6/bin:${PATH}"
-export PATH
-
 OTHER=(
   .bash_env_common # 操作PC共通環境変数
   .bash_env_private # 操作PCによって内容の異なる環境変数
