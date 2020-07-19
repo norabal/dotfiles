@@ -36,6 +36,7 @@ formulas=(
     nginx
     nkf
     openssl
+    peco
     postgres
     pre-commit
     python3
