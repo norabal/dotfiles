@@ -35,6 +35,7 @@ formulas=(
     mysql
     nginx
     nkf
+    neovim
     openssl
     peco
     postgres

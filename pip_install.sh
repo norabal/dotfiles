@@ -6,6 +6,7 @@ echo "installing python packages..."
 
 pip install \
     awslogs \
+    pynvim
 
 cat << END
 
