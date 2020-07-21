@@ -119,7 +119,7 @@ hook_add = '''
   " ファイル指定なしでvimを起動した場合だけ表示
   autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
   " NERDTreeのウィンドウだけが残るような場合はviを終了する
-  autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+  " autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
   " Vim起動時にNERDTreeを表示
   " autocmd vimenter * NERDTree
 '''
