@@ -37,6 +37,8 @@ echo  "Create symlink for Karabiner..."
 ln -svi "$THIS_DIR/karabiner/karabiner.json" "$HOME/.config/karabiner/karabiner.json"
 
 echo  "Create symlink for neovim..."
+mkdir -p "$HOME/.config/nvim"
+mkdir -p "$HOME/.config/dein/config"
 ln -svi "$THIS_DIR/neovim/init.vim" "$HOME/.config/nvim/init.vim"
 ln -svi "$THIS_DIR/neovim/dein.toml" "$HOME/.config/dein/config/dein.toml"
 ln -svi "$THIS_DIR/neovim/dein_lazy.toml" "$HOME/.config/dein/config/dein_lazy.toml"
