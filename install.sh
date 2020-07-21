@@ -60,6 +60,10 @@ echo "Display hidden files on Finder.app..."
 defaults write com.apple.finder AppleShowAllFiles TRUE
 killall Finder
 
+echo "Cursol speed up for trackpad and mouse..."
+defaults write -g com.apple.trackpad.scaling 16
+defaults write -g com.apple.mouse.scaling 16
+
 cat << END
 
 **************************************************
