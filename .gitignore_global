@@ -13,6 +13,7 @@
 *.code-workspace
 .history/
 .devcontainer/
+__debug_bin
 
 # Temporary ignore files
 Gemfile.lock
