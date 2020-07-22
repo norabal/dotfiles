@@ -44,4 +44,4 @@ alias dc="docker-compose"
 alias meld="/Applications/Meld.app/Contents/MacOS/Meld"
 
 # neovimをviで呼び出し
-alias vi="nvim"
+#alias vi="nvim"
