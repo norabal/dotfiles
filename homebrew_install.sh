@@ -59,7 +59,6 @@ formulas=(
 cask_formulas=(
     alfred
     appcleaner
-    cheatsheet
     clipy
     dbeaver-community
     imageoptim
