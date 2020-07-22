@@ -22,25 +22,6 @@ if [ -f $HOME/antigen.zsh ]; then
   source $HOME/antigen.zsh
 fi
 
-
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('$HOME/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "$HOME/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "$HOME/anaconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="$HOME/anaconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
-
-# anacondaのbase環境をアクティベート
-#conda activate base
-
 # コンソールの他のタブや、他のウィンドウとコマンド入力履歴を共有
 setopt share_history
 
@@ -63,13 +44,3 @@ function history_all { history -E 1 }
 
 # direnv
 eval "$(direnv hook zsh)"
-
-#pecoでhistory検索
-function peco-select-history() {
-  BUFFER=$(\history -n -r 1 | peco --query "$LBUFFER")
-  CURSOR=$#BUFFER
-  zle clear-screen
-}
-zle -N peco-select-history
-bindkey '^r' peco-select-history
-
