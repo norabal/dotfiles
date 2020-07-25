@@ -20,6 +20,7 @@ echo "Move to '$THIS_DIR'..."
 
 cd "$THIS_DIR" || { echo "Could not move"; exit 1; }
 ln -svi "$THIS_DIR/.gitignore_global" "$HOME/.gitignore_global"
+git config --global core.excludesfile ~/.gitignore_global
 
 cat << END
 

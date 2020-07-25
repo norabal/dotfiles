@@ -22,3 +22,8 @@ yarn.lock
 package-lock.json
 .generators
 .rakeTasks
+
+# clang
+*.out
+test
+info.plist
