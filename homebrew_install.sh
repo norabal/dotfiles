@@ -43,6 +43,7 @@ formulas=(
     python3
     rabbitmq
     redis
+    remind101/formulae/assume-role
     s3cmd
     shellcheck
     sqlite
