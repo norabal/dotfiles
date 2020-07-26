@@ -2,7 +2,7 @@
 
 set -u
 
-THIS_DIR=$(cd "$(dirname "$0")" || exit; pwd)
+THIS_DIR=$(cd "$(dirname "$0")" || exit 1; pwd)
 
 cat << START
 
