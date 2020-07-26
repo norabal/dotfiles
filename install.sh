@@ -2,7 +2,7 @@
 
 set -u
 
-THIS_DIR=$(cd $(dirname $0); pwd)
+THIS_DIR=$(cd "$(dirname "$0")" || exit; pwd)
 CURRENT_DIR=$(pwd)
 
 cat << START
