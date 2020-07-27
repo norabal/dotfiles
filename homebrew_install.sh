@@ -24,6 +24,7 @@ formulas=(
     direnv
     flake8
     go
+    gcc
     git
     golangci/tap/golangci-lint
     heroku
