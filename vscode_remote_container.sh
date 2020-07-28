@@ -2,8 +2,7 @@
 
 set -u
 
-THIS_DIR=$(cd $(dirname $0); pwd)
-CURRENT_DIR=$(pwd)
+THIS_DIR=$(cd "$(dirname "$0")" || exit 1; pwd)
 
 cat << START
 
@@ -20,6 +19,7 @@ echo "Move to '$THIS_DIR'..."
 
 cd "$THIS_DIR" || { echo "Could not move"; exit 1; }
 ln -svi "$THIS_DIR/.gitignore_global" "$HOME/.gitignore_global"
+git config --global core.excludesfile "$HOME/.gitignore_global"
 
 cat << END
 

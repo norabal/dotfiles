@@ -1,15 +1,5 @@
 #!/bin/bash
 
-# mysql PATH
-if [[ -e "/usr/local/opt/mysql@5.6" ]]; then
-    export PATH="/usr/local/opt/mysql@5.6/bin:$PATH"
-fi
-
-# Setting PATH for Python 3.6
-# The original version is saved in .bash_profile.pysave
-PATH="/Library/Frameworks/Python.framework/Versions/3.6/bin:${PATH}"
-export PATH
-
 OTHER=(
   .bash_env_common # 操作PC共通環境変数
   .bash_env_private # 操作PCによって内容の異なる環境変数
@@ -17,16 +7,21 @@ OTHER=(
   .bash_aliases_private # 操作PCによって内容の異なるエイリアス
 )
 
-# Load anyenv
-if which anyenv > /dev/null; then
-    eval "$(anyenv init -)"
-fi
-
 for bashfile in "${OTHER[@]}"; do
   if [[ -e "$HOME/$bashfile" ]]; then
     source "$HOME/$bashfile"
   fi
 done
+
+# mysql PATH
+if [[ -e "/usr/local/opt/mysql@5.6" ]]; then
+    export PATH="/usr/local/opt/mysql@5.6/bin:$PATH"
+fi
+
+# Load anyenv
+if which anyenv > /dev/null; then
+    eval "$(anyenv init -)"
+fi
 
 # added by Anaconda3 2019.03 installer
 # >>> conda init >>>
@@ -45,3 +40,11 @@ fi
 unset __conda_setup
 # <<< conda init <<<
 
+# pecoでhistory検索
+function peco-select-history() {
+  BUFFER=$(\history -n -r 1 | peco --query "$LBUFFER")
+  CURSOR=$#BUFFER
+  zle clear-screen
+}
+zle -N peco-select-history
+bindkey '^r' peco-select-history

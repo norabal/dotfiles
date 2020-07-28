@@ -24,6 +24,7 @@ formulas=(
     direnv
     flake8
     go
+    gcc
     git
     golangci/tap/golangci-lint
     heroku
@@ -35,12 +36,15 @@ formulas=(
     mysql
     nginx
     nkf
+    neovim
     openssl
+    peco
     postgres
     pre-commit
     python3
     rabbitmq
     redis
+    remind101/formulae/assume-role
     s3cmd
     shellcheck
     sqlite
@@ -57,7 +61,6 @@ formulas=(
 cask_formulas=(
     alfred
     appcleaner
-    cheatsheet
     clipy
     dbeaver-community
     imageoptim

@@ -2,7 +2,7 @@
 
 set -u
 
-THIS_DIR=$(cd $(dirname $0); pwd)
+THIS_DIR=$(cd "$(dirname "$0")" || exit 1; pwd)
 CURRENT_DIR=$(pwd)
 
 cat << START
@@ -33,8 +33,19 @@ done
 echo "Back to '$CURRENT_DIR'..."
 cd "$CURRENT_DIR" || { echo "Could not move"; exit 1; }
 
+echo "Create symlink for secret_settings"
+ln -svi "$HOME/GoogleDrive/secret_settings/.ssh" "$HOME"
+ln -svi "$HOME/GoogleDrive/secret_settings/.aws" "$HOME"
+
 echo  "Create symlink for Karabiner..."
 ln -svi "$THIS_DIR/karabiner/karabiner.json" "$HOME/.config/karabiner/karabiner.json"
+
+echo  "Create symlink for neovim..."
+mkdir -p "$HOME/.config/nvim"
+mkdir -p "$HOME/.config/dein/config"
+ln -svi "$THIS_DIR/neovim/init.vim" "$HOME/.config/nvim/init.vim"
+ln -svi "$THIS_DIR/neovim/dein.toml" "$HOME/.config/dein/config/dein.toml"
+ln -svi "$THIS_DIR/neovim/dein_lazy.toml" "$HOME/.config/dein/config/dein_lazy.toml"
 
 # WARNING: If you are using JetBrains Toolbox, creating symlink will be failed.
 echo  "Create symlink for intelij..."
@@ -47,7 +58,7 @@ echo  "Create symlink for Prezto..."
 if [[ -d "$HOME/.zprezto/runcoms" ]]; then
   rm -r "$HOME/.zprezto/runcoms"
 fi
-ln -sv "$THIS_DIR/zprezto/runcoms" "$HOME/.zprezto/runcoms"
+ln -svi "$THIS_DIR/zprezto/runcoms" "$HOME/.zprezto/runcoms"
 
 echo "Display hidden files on Finder.app..."
 defaults write com.apple.finder AppleShowAllFiles TRUE

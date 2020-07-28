@@ -42,3 +42,11 @@ alias dc="docker-compose"
 
 # meld
 alias meld="/Applications/Meld.app/Contents/MacOS/Meld"
+
+# neovimをviで呼び出し
+#alias vi="nvim"
+
+# swでassume-roleを呼び出し
+function sw() {
+    eval "$(assume-role -duration 8h $1)"
+}
