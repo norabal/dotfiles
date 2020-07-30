@@ -26,6 +26,7 @@ formulas=(
     go
     git
     golangci/tap/golangci-lint
+    graphviz
     heroku
     jenkins
     jq
@@ -64,6 +65,7 @@ cask_formulas=(
     dbeaver-community
     imageoptim
     iterm2
+    java
     macvim
     mongodb
     ngrok
