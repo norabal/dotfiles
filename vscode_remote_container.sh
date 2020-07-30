@@ -18,8 +18,8 @@ echo "Create symlink for Hidden files..."
 echo "Move to '$THIS_DIR'..."
 
 cd "$THIS_DIR" || { echo "Could not move"; exit 1; }
-rm "$HOME/.gitconfig"
-ln -svi "$THIS_DIR/.gitconfig" "$HOME/.gitconfig"
+ln -sf "$THIS_DIR/.gitconfig" "$HOME/.gitconfig"
+ln -sf "$THIS_DIR/.gitignore_global" "$HOME/.gitignore_global"
 
 cat << END
 
