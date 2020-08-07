@@ -33,7 +33,7 @@ formulas=(
     lnav
     make
     mecab-ipadic
-    mysql
+    mysql@5.6
     nginx
     nkf
     neovim
