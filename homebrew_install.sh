@@ -24,6 +24,7 @@ formulas=(
     direnv
     flake8
     go
+    gcc
     git
     golangci/tap/golangci-lint
     graphviz
@@ -33,7 +34,7 @@ formulas=(
     lnav
     make
     mecab-ipadic
-    mysql
+    mysql@5.6
     nginx
     nkf
     neovim
