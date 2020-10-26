@@ -87,7 +87,6 @@ init_cask_formulas=(
     homebrew/cask-versions/adoptopenjdk8
     intellij-idea
     karabiner-elements
-    spotify
     virtualbox
 )
 
