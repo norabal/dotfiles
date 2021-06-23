@@ -103,16 +103,16 @@ echo "start initial brew install cask apps..."
 if [ $# -ne 0 ]; then
   if [ "$1" = "init" ]; then
       for formula in "${init_cask_formulas[@]}"; do
-          brew cask install "$formula"
-          brew cask upgrade "$formula"
+          brew install "$formula" --cask
+          brew upgrade "$formula" --cask
       done
   fi
 fi
 
 echo "start brew install cask apps..."
 for formula in "${cask_formulas[@]}"; do
-    brew cask install "$formula"
-    brew cask upgrade "$formula"
+    brew install "$formula" --cask
+    brew upgrade "$formula" --cask
 done
 
 brew cleanup
