@@ -37,7 +37,6 @@ formulas=(
     mysql@5.6
     nginx
     nkf
-    neovim
     openssl
     peco
     postgres
@@ -68,6 +67,7 @@ cask_formulas=(
     iterm2
     java
     macvim
+    microsoft-teams
     mongodb
     ngrok
     postman

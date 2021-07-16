@@ -6,7 +6,7 @@
 export GDRIVE="$HOME/GoogleDrive"
 
 # secret_settingsを格納しているパス
-export SECRET_SETTINGS="$GDRIVE/secret_settings"
+export SECRET_SETTINGS="$GDRIVE/マイドライブ/secret_settings"
 
 # dotの実行環境指定
 export DOT_ENVIRONMENT=local

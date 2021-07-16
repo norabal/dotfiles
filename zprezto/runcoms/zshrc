@@ -42,6 +42,6 @@ setopt hist_ignore_space
 # direnv
 eval "$(direnv hook zsh)"
 
+# 「/Users/motoi_komatsu/.zshrc:unalias:46: no such hash table element: mysql」というエラーが出ているので削除して良いかも
 # See: https://github.com/ohmyzsh/ohmyzsh/issues/2283#issuecomment-45452691
-unalias mysql
-
+# unalias mysql
