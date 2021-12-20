@@ -8,7 +8,6 @@ repos:
         additional_dependencies: [flake8==3.7.7]
       - id: pretty-format-json
       - id: check-json
-      - id: detect-aws-credentials
       - id: detect-private-key
       - id: sort-simple-yaml
       - id: check-yaml

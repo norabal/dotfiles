@@ -34,17 +34,11 @@ alias edit="/Applications/Visual\ Studio\ Code.app/Contents/MacOS/Electron"
 # mvimでMacVimが起動するようにする
 alias mvim="/Applications/MacVim.app/Contents/bin/mvim"
 
-# メモを開く
-alias memo="conda activate new_day; python ${HOME}/new_day; conda deactivate"
-
 # Docker
 alias dc="docker-compose"
 
 # meld
 alias meld="/Applications/Meld.app/Contents/MacOS/Meld"
-
-# neovimをviで呼び出し
-#alias vi="nvim"
 
 # swでassume-roleを呼び出し
 function sw() {

@@ -27,3 +27,6 @@ package-lock.json
 *.out
 test
 info.plist
+
+# golang
+debug.test

@@ -18,12 +18,12 @@ anyenv install rbenv
 exec $SHELL -l
 
 # Add more versions if you prefer.
-nodenv install 12.1.0
-nodenv global 12.1.0
+nodenv install 12.13.1
+nodenv global 12.13.1
 nodenv rehash
 
-rbenv install 2.5.3
-rbenv global 2.5.3
+rbenv install 2.7.3
+rbenv global 2.7.3
 rbenv rehash
 
 echo "Installed versions..."

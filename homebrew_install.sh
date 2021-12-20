@@ -27,16 +27,16 @@ formulas=(
     gcc
     git
     golangci/tap/golangci-lint
+    graphviz
     heroku
     jenkins
     jq
     lnav
     make
     mecab-ipadic
-    mysql
+    mysql@5.6
     nginx
     nkf
-    neovim
     openssl
     peco
     postgres
@@ -65,7 +65,9 @@ cask_formulas=(
     dbeaver-community
     imageoptim
     iterm2
+    java
     macvim
+    microsoft-teams
     mongodb
     ngrok
     postman
@@ -85,7 +87,6 @@ init_cask_formulas=(
     homebrew/cask-versions/adoptopenjdk8
     intellij-idea
     karabiner-elements
-    spotify
     virtualbox
 )
 
@@ -102,16 +103,16 @@ echo "start initial brew install cask apps..."
 if [ $# -ne 0 ]; then
   if [ "$1" = "init" ]; then
       for formula in "${init_cask_formulas[@]}"; do
-          brew cask install "$formula"
-          brew cask upgrade "$formula"
+          brew install "$formula" --cask
+          brew upgrade "$formula" --cask
       done
   fi
 fi
 
 echo "start brew install cask apps..."
 for formula in "${cask_formulas[@]}"; do
-    brew cask install "$formula"
-    brew cask upgrade "$formula"
+    brew install "$formula" --cask
+    brew upgrade "$formula" --cask
 done
 
 brew cleanup

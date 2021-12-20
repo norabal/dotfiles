@@ -48,3 +48,11 @@ function peco-select-history() {
 }
 zle -N peco-select-history
 bindkey '^r' peco-select-history
+
+# mysql5.7にパスを通す
+# 過去に別バージョンのmysqlがインストールされていた場合は、関連ディレクトリの削除が必要になるかもしれない。
+# See: https://qiita.com/AK4747471/items/36b73edd9d1e666ae0c0 
+export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
+
+# GOPATHにPATHを通す
+export PATH="$PATH:$(go env GOPATH)/bin"
