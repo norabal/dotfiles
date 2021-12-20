@@ -5,8 +5,7 @@ set -u
 echo "installing python packages..."
 
 pip install \
-    awslogs \
-    pynvim
+    awslogs
 
 cat << END
 

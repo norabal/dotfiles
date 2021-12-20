@@ -85,7 +85,6 @@ init_cask_formulas=(
     google-chrome
     google-japanese-ime
     homebrew/cask-versions/adoptopenjdk8
-    intellij-idea
     karabiner-elements
     virtualbox
 )

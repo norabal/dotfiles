@@ -4,10 +4,6 @@
 .env
 .envrc
 
-# intelij
-.idea/
-*.iml
-
 # vscode
 .vscode/*
 *.code-workspace
