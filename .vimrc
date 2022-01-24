@@ -1,8 +1,33 @@
-" 事前にvim-bootstrap.comから生成させた設定(html, javascript, python, rubyを選択)を
-" .vimrcとして読み込ませてある。
+" MacOSのクリップボードとヤンクを共有
+set clipboard+=unnamed
 
-" .ideavimから設定読み込み
-source ${HOME}/.ideavimrc
+" 改行時に前の行のインデントを継続する
+set autoindent
+
+" 改行時に入力された行の末尾に合わせて次の行のインデントを増減する
+set smartindent
+
+" 検索するときに大文字小文字を区別しない
+set ignorecase
+
+" 検索時に大文字を含んでいたら大/小を区別
+set smartcase
+
+" インクリメンタル検索 (検索ワードの最初の文字を入力した時点で検索が開始)
+set incsearch
+
+" 検索対象をハイライト
+set hlsearch
+
+" 検索時に最後まで行ったら最初に戻る
+set wrapscan
+
+" Escの2回押しでハイライト消去
+nnoremap <Esc><Esc> :nohlsearch<CR><ESC>
+
+" xやXのときに無名レジスタを上書きさせない
+nnoremap x "_x
+nnoremap X "_X
 
 " カーソルのある行を目立つようにする
 set cursorline
