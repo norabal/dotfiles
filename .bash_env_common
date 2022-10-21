@@ -3,7 +3,7 @@
 # ---------------------------------------------------------------------
 
 # GoogleDriveまでのパス
-export GDRIVE="$HOME/GoogleDrive"
+export GDRIVE="$HOME/Google Drive"
 
 # secret_settingsを格納しているパス
 export SECRET_SETTINGS="$GDRIVE/マイドライブ/secret_settings"
