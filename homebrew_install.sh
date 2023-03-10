@@ -54,6 +54,7 @@ formulas=(
     tmux
     tree
     yarn
+    wget
     zsh
     zsh-completions
 )
