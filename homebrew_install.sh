@@ -63,6 +63,7 @@ cask_formulas=(
     alfred
     appcleaner
     clipy
+    cyberduck
     dbeaver-community
     imageoptim
     iterm2
