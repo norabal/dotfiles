@@ -73,6 +73,7 @@ cask_formulas=(
     mongodb
     ngrok
     postman
+    skitch
     slack
     the-unarchiver
     visual-studio-code
