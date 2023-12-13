@@ -56,3 +56,6 @@ export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
 
 # GOPATHにPATHを通す
 export PATH="$PATH:$(go env GOPATH)/bin"
+
+# nodenvを有効化
+eval "$(nodenv init -)"
