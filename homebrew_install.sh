@@ -41,6 +41,7 @@ formulas=(
     peco
     postgres
     pre-commit
+    protolint
     python3
     rabbitmq
     redis
