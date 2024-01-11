@@ -18,5 +18,5 @@ jobs:
       - uses: akiojin/auto-review-github-action@v0.2.1
         with:
           openai-api-key: ${{ secrets.OPENAI_API_KEY }}
-          target: "sh,cs,yml,yaml,py,go,js,ts,jsx,tsx,java,rb,php,html,css,scss,less,md,txt,py"
+          target: "sh,cs,yml,yaml,py,go,js,ts,jsx,tsx,java,rb,php,html,css,scss,less,md,txt"
           language: 日本語
