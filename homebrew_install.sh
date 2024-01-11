@@ -11,8 +11,6 @@ which brew >/dev/null 2>&1 && brew doctor
 echo "run brew update..."
 which brew >/dev/null 2>&1 && brew update
 
-echo "いいでしょ、変更できてる？"
-
 formulas=(
     anyenv
     awscli
