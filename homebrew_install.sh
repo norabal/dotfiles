@@ -25,6 +25,7 @@ formulas=(
     flake8
     go
     gcc
+    gh
     git
     golangci/tap/golangci-lint
     graphviz
