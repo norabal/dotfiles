@@ -32,6 +32,7 @@ formulas=(
     heroku
     jenkins
     jq
+    k9s
     lnav
     make
     mecab-ipadic
