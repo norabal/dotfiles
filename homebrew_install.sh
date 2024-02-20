@@ -20,10 +20,12 @@ formulas=(
     circleci
     ctags
     ctags-exuberant
+    clang-format
     curl
     direnv
     flake8
     go
+    go-task/tap/go-task
     gcc
     gh
     git
@@ -32,6 +34,7 @@ formulas=(
     heroku
     jenkins
     jq
+    kustomize
     k9s
     lnav
     make
@@ -39,6 +42,7 @@ formulas=(
     mysql@5.6
     nginx
     nkf
+    nodenv
     openssl
     peco
     postgres
@@ -51,6 +55,8 @@ formulas=(
     s3cmd
     shellcheck
     sqlite
+    skaffold
+    stern
     sshrc
     swig
     terraform
