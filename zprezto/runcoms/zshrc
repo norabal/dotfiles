@@ -44,4 +44,10 @@ eval "$(direnv hook zsh)"
 
 # 「/Users/motoi_komatsu/.zshrc:unalias:46: no such hash table element: mysql」というエラーが出ているので削除して良いかも
 # See: https://github.com/ohmyzsh/ohmyzsh/issues/2283#issuecomment-45452691
-# unalias mysql
+unalias mysql
+export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
+
+# Goのバージョン管理ツールの起動
+# cdにはzshの関係で"cd noccrect"がアサインされており、これを無効化しないと起動に失敗する
+unalias cd
+[[ -s "/Users/motoi.komatsu/.gvm/scripts/gvm" ]] && source "/Users/motoi.komatsu/.gvm/scripts/gvm"
