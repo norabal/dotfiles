@@ -59,3 +59,7 @@ export PATH="$PATH:$(go env GOPATH)/bin"
 
 # nodenvを有効化
 eval "$(nodenv init -)"
+
+### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
+export PATH="/Users/motoi.komatsu/.rd/bin:$PATH"
+### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)

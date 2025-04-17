@@ -45,3 +45,7 @@ eval "$(direnv hook zsh)"
 # 「/Users/motoi_komatsu/.zshrc:unalias:46: no such hash table element: mysql」というエラーが出ているので削除して良いかも
 # See: https://github.com/ohmyzsh/ohmyzsh/issues/2283#issuecomment-45452691
 # unalias mysql
+
+### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
+export PATH="/Users/motoi.komatsu/.rd/bin:$PATH"
+### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
