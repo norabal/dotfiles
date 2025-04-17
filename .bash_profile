@@ -61,5 +61,5 @@ export PATH="$PATH:$(go env GOPATH)/bin"
 eval "$(nodenv init -)"
 
 ### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
-export PATH="/Users/motoi.komatsu/.rd/bin:$PATH"
+export PATH="$HOME/.rd/bin:$PATH"
 ### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
