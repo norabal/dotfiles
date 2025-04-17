@@ -50,10 +50,10 @@ export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
 # Goのバージョン管理ツールの起動
 # cdにはzshの関係で"cd noccrect"がアサインされており、これを無効化しないと起動に失敗する
 unalias cd
-[[ -s "/Users/motoi.komatsu/.gvm/scripts/gvm" ]] && source "/Users/motoi.komatsu/.gvm/scripts/gvm"
+[[ -s "$HOME/.gvm/scripts/gvm" ]] && source "$HOME/.gvm/scripts/gvm"
 
 ### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
-export PATH="/Users/motoi.komatsu/.rd/bin:$PATH"
+export PATH="$HOME/.rd/bin:$PATH"
 ### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
 
 # Generated for envman. Do not edit.

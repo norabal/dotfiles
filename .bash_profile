@@ -61,8 +61,5 @@ export PATH="$PATH:$(go env GOPATH)/bin"
 eval "$(nodenv init -)"
 
 ### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
-export PATH="/Users/motoi.komatsu/.rd/bin:$PATH"
+export PATH="$HOME/.rd/bin:$PATH"
 ### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
-
-# KUBECONFIG環境変数の設定
-export KUBECONFIG=$HOME/.kube/config:$HOME/.kube/config-eks-movo-test.yaml

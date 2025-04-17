@@ -36,6 +36,7 @@ cd "$CURRENT_DIR" || { echo "Could not move"; exit 1; }
 echo "Create symlink for secret_settings"
 ln -svi "$HOME/Google Drive/マイドライブ/secret_settings/.ssh" "$HOME"
 ln -svi "$HOME/Google Drive/マイドライブ/secret_settings/.aws" "$HOME"
+ln -svi "$HOME/Google Drive/マイドライブ/secret_settings/.bash_env_common" "$HOME"
 
 echo  "Create symlink for Karabiner..."
 ln -svi "$THIS_DIR/karabiner/karabiner.json" "$HOME/.config/karabiner/karabiner.json"
