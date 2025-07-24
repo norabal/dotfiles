@@ -26,3 +26,7 @@ info.plist
 
 # golang
 debug.test
+
+# claude
+settings.local.json
+
