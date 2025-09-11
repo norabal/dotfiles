@@ -38,17 +38,11 @@ setopt hist_ignore_space
 # direnv (disabled)
 # eval "$(direnv hook zsh)"
 
-# 「/Users/motoi_komatsu/.zshrc:unalias:46: no such hash table element: mysql」というエラーが出ているので削除して良いかも
-# See: https://github.com/ohmyzsh/ohmyzsh/issues/2283#issuecomment-45452691
-# エイリアスが存在する場合のみ削除
-if alias mysql &>/dev/null; then
-    unalias mysql
-fi
-export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
+# MySQL PATH (handled in .bash_profile)
 
 # Goのバージョン管理ツールの起動
 # cdにはzshの関係で"cd noccrect"がアサインされており、これを無効化しないと起動に失敗する
-unalias cd
+unalias cd 2>/dev/null || true
 [[ -s "$HOME/.gvm/scripts/gvm" ]] && source "$HOME/.gvm/scripts/gvm"
 
 
