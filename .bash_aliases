@@ -10,7 +10,8 @@ alias zpro="source ${HOME}/.zshrc"
 
 # 既存コマンドの上書き
 alias ls="ls -laG"
-alias tail="tail -f -n 100"
+# alias tail="tail -f -n 100"  # zshで問題を引き起こすためコメントアウト
+alias tailf="tail -f -n 100"  # 代替コマンドとしてtailfを使用
 alias br='git branch'
 alias pull='git pull'
 alias push='git push'
