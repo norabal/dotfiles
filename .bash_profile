@@ -55,8 +55,8 @@ if command -v go >/dev/null 2>&1; then
     export PATH="$PATH:$(go env GOPATH)/bin"
 fi
 
-# nodenvを有効化 (anyenvに含まれるため無効化)
-# eval "$(nodenv init -)"
+# nodenvを有効化
+eval "$(nodenv init -)"
 
 ### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
 export PATH="$HOME/.rd/bin:$PATH"
