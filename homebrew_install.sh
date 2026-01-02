@@ -23,7 +23,6 @@ formulas=(
     clang-format
     curl
     direnv
-    flake8
     go
     go-task/tap/go-task
     gcc
@@ -31,14 +30,11 @@ formulas=(
     git
     golangci/tap/golangci-lint
     graphviz
-    heroku
-    jenkins
     jq
     kustomize
     k9s
     lnav
     make
-    mecab-ipadic
     mysql@5.6
     nginx
     nkf
@@ -79,20 +75,16 @@ cask_formulas=(
     iterm2
     java
     macvim
-    microsoft-teams
-    mongodb
     ngrok
     postman
     skitch
     slack
     the-unarchiver
-    visual-studio-code
     xmind
     zoom
 )
 
 init_cask_formulas=(
-    anaconda
     bettertouchtool
     docker
     firefox
