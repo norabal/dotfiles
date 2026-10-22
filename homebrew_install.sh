@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# DEPRECATED: Use Brewfile instead (`brew bundle --file=Brewfile`).
+# This script is no longer maintained and will not receive further updates.
+
 set -u
 
 echo "installing homebrew..."
