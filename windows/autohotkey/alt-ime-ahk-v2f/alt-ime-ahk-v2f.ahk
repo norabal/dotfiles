@@ -192,11 +192,7 @@ Run "https://www.google.co.jp/search?q=" A_Clipboard
 }
 
 
-CapsLock::~
 ;Del::Home
-PgUp::PgDn
-+PgUp::PgUp
-PgDn::Home
 ;End::Del
 ;Tab::Send("^m")
 
