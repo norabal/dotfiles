@@ -211,3 +211,8 @@ Run "https://www.google.co.jp/search?q=" A_Clipboard
 !t::Send("{RCtrl down}t{RCtrl up}")  ; Alt+T → 新しいタブ
 !w::Send("{RCtrl down}w{RCtrl up}")  ; Alt+W → タブを閉じる
 !l::Send("{RCtrl down}l{RCtrl up}")  ; Alt+L → アドレスバーを選択
+
+; Alt+R → ブラウザの再読み込み（ブラウザ上でのみ有効）
+#HotIf WinActive("ahk_exe chrome.exe") || WinActive("ahk_exe msedge.exe") || WinActive("ahk_exe firefox.exe") || WinActive("ahk_exe brave.exe")
+!r::Send("{RCtrl down}r{RCtrl up}")  ; Alt+R → 再読み込み
+#HotIf
