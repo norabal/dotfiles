@@ -213,11 +213,13 @@ Run "https://www.google.co.jp/search?q=" A_Clipboard
 !l::Send("{RCtrl down}l{RCtrl up}")  ; Alt+L → アドレスバーを選択
 !Enter::Send("{RCtrl down}{Enter}{RCtrl up}")  ; Alt+Enter → Ctrl+Enter
 
+; Alt+[ / Alt+] → 戻る / 進む（ブラウザ・エクスプローラー・VS Code/Cursor など）
+; Alt+←/→ は PowerToys で Home/End に割り当て済みのため、マウスの戻る/進むボタンと同じキーを送る
+![::Send("{Browser_Back}")     ; Alt+[ → 戻る
+!]::Send("{Browser_Forward}")  ; Alt+] → 進む
+
 ; Alt+R → ブラウザの再読み込み（ブラウザ上でのみ有効）
 #HotIf WinActive("ahk_exe chrome.exe") || WinActive("ahk_exe msedge.exe") || WinActive("ahk_exe firefox.exe") || WinActive("ahk_exe brave.exe")
 !r::Send("{RCtrl down}r{RCtrl up}")  ; Alt+R → 再読み込み
 !+r::Send("{RCtrl down}{Shift down}r{Shift up}{RCtrl up}")  ; Alt+Shift+R → スーパーリロード
-; Alt+←/→ は PowerToys で Home/End に割り当て済みのため、ブラウザ専用の戻る/進むキーを送る
-![::Send("{Browser_Back}")     ; Alt+[ → 戻る
-!]::Send("{Browser_Forward}")  ; Alt+] → 進む
 #HotIf

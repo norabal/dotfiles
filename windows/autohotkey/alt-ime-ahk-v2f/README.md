@@ -12,7 +12,7 @@
 | Alt + C / V / X / Z / A / S / F / T / W / L / Enter | Ctrl + 同じキー（Mac の Command 風） |
 | Alt + R（ブラウザのみ） | 再読み込み |
 | Alt + Shift + R（ブラウザのみ） | スーパーリロード（キャッシュ無視） |
-| Alt + [ / Alt + ]（ブラウザのみ） | 戻る / 進む |
+| Alt + [ / Alt + ] | 戻る / 進む（ブラウザ・エクスプローラー・VS Code / Cursor など） |
 | Win + F | 選択中の文字列を Google 検索 |
 
 - Alt を押している間に他のキーを打つと通常の Alt として動作する
