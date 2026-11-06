@@ -9,7 +9,7 @@
 | --- | --- |
 | 左 Alt 空打ち | IME OFF（英数） |
 | 右 Alt 空打ち | IME ON（かな） |
-| Alt + C / V / X / Z / A / S / F / T / W / L | Ctrl + 同じキー（Mac の Command 風） |
+| Alt + C / V / X / Z / A / S / F / T / W / L / Enter | Ctrl + 同じキー（Mac の Command 風） |
 | Alt + R（ブラウザのみ） | 再読み込み |
 | Alt + Shift + R（ブラウザのみ） | スーパーリロード（キャッシュ無視） |
 | Win + F | 選択中の文字列を Google 検索 |
