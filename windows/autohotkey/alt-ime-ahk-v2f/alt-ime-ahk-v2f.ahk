@@ -198,3 +198,16 @@ Run "https://www.google.co.jp/search?q=" A_Clipboard
 
 
 
+
+; Alt を Mac の Command キーのように使う
+; PowerToys の左Ctrl+H/J/K/L/[ と衝突しないよう右 Ctrl を送る
+!c::Send("{RCtrl down}c{RCtrl up}")  ; Alt+C → コピー
+!v::Send("{RCtrl down}v{RCtrl up}")  ; Alt+V → 貼り付け
+!x::Send("{RCtrl down}x{RCtrl up}")  ; Alt+X → 切り取り
+!z::Send("{RCtrl down}z{RCtrl up}")  ; Alt+Z → 元に戻す
+!a::Send("{RCtrl down}a{RCtrl up}")  ; Alt+A → すべて選択
+!s::Send("{RCtrl down}s{RCtrl up}")  ; Alt+S → 保存
+!f::Send("{RCtrl down}f{RCtrl up}")  ; Alt+F → 検索
+!t::Send("{RCtrl down}t{RCtrl up}")  ; Alt+T → 新しいタブ
+!w::Send("{RCtrl down}w{RCtrl up}")  ; Alt+W → タブを閉じる
+!l::Send("{RCtrl down}l{RCtrl up}")  ; Alt+L → アドレスバーを選択
