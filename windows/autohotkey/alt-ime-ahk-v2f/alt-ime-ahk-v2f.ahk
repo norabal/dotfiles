@@ -151,7 +151,7 @@ GitHubRepoReadme(A_ThisMenuItem, A_ThisMenuItemPos, MyMenu)
 *LAlt::
 {
     SetKeyDelay(-1)
-    Send("{Blind}{LAlt DownR}{F13}")
+    Send("{Blind}{LAlt DownR}{vkE8}")
     KeyWait("LAlt")
 }
 ~*LAlt up::
@@ -170,7 +170,7 @@ GitHubRepoReadme(A_ThisMenuItem, A_ThisMenuItemPos, MyMenu)
 *RAlt::
 {
     SetKeyDelay(-1)
-    Send("{Blind}{RAlt DownR}{F13}")
+    Send("{Blind}{RAlt DownR}{vkE8}")
     KeyWait("RAlt")
 }
 ~*RAlt up::
