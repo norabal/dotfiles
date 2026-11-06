@@ -217,4 +217,7 @@ Run "https://www.google.co.jp/search?q=" A_Clipboard
 #HotIf WinActive("ahk_exe chrome.exe") || WinActive("ahk_exe msedge.exe") || WinActive("ahk_exe firefox.exe") || WinActive("ahk_exe brave.exe")
 !r::Send("{RCtrl down}r{RCtrl up}")  ; Alt+R → 再読み込み
 !+r::Send("{RCtrl down}{Shift down}r{Shift up}{RCtrl up}")  ; Alt+Shift+R → スーパーリロード
+; Alt+←/→ は PowerToys で Home/End に割り当て済みのため、ブラウザ専用の戻る/進むキーを送る
+![::Send("{Browser_Back}")     ; Alt+[ → 戻る
+!]::Send("{Browser_Forward}")  ; Alt+] → 進む
 #HotIf
