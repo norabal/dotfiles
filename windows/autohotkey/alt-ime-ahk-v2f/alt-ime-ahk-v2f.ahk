@@ -215,4 +215,5 @@ Run "https://www.google.co.jp/search?q=" A_Clipboard
 ; Alt+R → ブラウザの再読み込み（ブラウザ上でのみ有効）
 #HotIf WinActive("ahk_exe chrome.exe") || WinActive("ahk_exe msedge.exe") || WinActive("ahk_exe firefox.exe") || WinActive("ahk_exe brave.exe")
 !r::Send("{RCtrl down}r{RCtrl up}")  ; Alt+R → 再読み込み
+!+r::Send("{RCtrl down}{Shift down}r{Shift up}{RCtrl up}")  ; Alt+Shift+R → スーパーリロード
 #HotIf
